@@ -897,23 +897,18 @@
 
 									<div class="entry-content">
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Phishing attacks are a significant threat to internet users, with cybercriminals using increasingly sophisticated tactics to
-											trick people into revealing sensitive information or downloading malware. This project aims to protect individuals and
-											organizations from these threats by developing a system that can detect phishing URLs and educate users about how to recognize
-											and avoid them. As phishing attacks are constantly evolving, a learning platform that can adapt and improve its detection
-											capabilities is essential for staying ahead of the threat. Additionally, the project also has the potential to contribute to
-											our understanding of how phishing attacks work and how they can be effectively detected and prevented.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Phishing attacks are a growing threat to internet users, with cybercriminals employing increasingly sophisticated tactics to steal sensitive information or distribute malware. PhURL is a web-based platform designed to combat this threat by detecting phishing URLs and educating users on how to recognize and avoid them. This case study explores the design and development stages of PhURL, highlighting the methodologies, challenges, and outcomes of the project.</p>
 
 
-										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Introduction</b></h2>
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Project Overview</b></h2>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Problem Statement</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Phishing attacks are evolving rapidly, making it challenging for individuals and organizations to stay protected. Existing solutions often lack adaptability and fail to educate users effectively. PhURL aims to address these gaps by combining advanced machine learning (ML) techniques with user education to provide a comprehensive phishing detection and prevention platform.</p>
 
-
-
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">PhURL uses multiple URL detection methods to increase accuracy and adapt to evolving phishing tactics, providing more comprehensive protection against phishing attacks. With phishing attacks constantly evolving and becoming more sophisticated, PhURL is essential for
-											staying ahead of the threat by providing a learning platform that can adapt and improve its detection capabilities over time. Not only 
-											is PhURL practical, but it also has the potential to contribute to our understanding of how phishing attacks work and how they can be
-											effectively detected and prevented.</p>
-
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Objectives</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. Develop a machine learning model capable of accurately detecting phishing URLs.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. Create an intuitive and user-friendly interface for seamless interaction.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. Educate users about phishing threats and prevention strategies.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">4. Ensure the platform is scalable, adaptable, and secure.</p>
 
 
 										<blockquote class="wp-block-quote" style= color:white;>
@@ -921,17 +916,26 @@
 											<!-- <cite>Report Phishing & Block The Sender</cite> -->
 										</blockquote>
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Project PhURL offers a viable solution to the growing concern of phishing attacks.
-											The platform's machine learning model is effective in identifying and preventing
-											malicious activities, and the awareness and educational resources provided help
-											individuals recognize and avoid phishing attacks. The development and
-											implementation of Project PhURL, including the methodology used to build the
-											machine learning model and the results of experiments conducted, are presented in
-											this report. The existing literature on phishing attacks and their prevention is also
-											reviewed, providing a critical analysis of the findings.
-											</p>
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Design Process</b></h2>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>1. User Research and Requirements Analysis</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The design process began with a thorough analysis of user needs. Key insights included:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Users required a simple, intuitive interface to check URLs for phishing risks.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Educational resources needed to be easily accessible and understandable for users of all technical levels.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- The platform had to be responsive and compatible across multiple devices and browsers.</p>
 
-										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Backend Development Phase</b></h2>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>2. Wireframing and Prototyping</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Using Figma, the team created wireframes and prototypes for the user interface (UI). The design prioritized:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Simplicity:</strong> A clean, minimalistic layout to avoid overwhelming users.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Accessibility:</strong> Clear navigation and readable typography.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Engagement:</strong> Interactive elements to encourage user interaction with the platform..</p>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>3. UI/UX Design</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The final UI design incorporated:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- A dashboard for URL verification and results.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- A learning section with articles, infographics, and videos about phishing.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Feedback mechanisms to guide users in case of errors or misclassifications.</p>
+
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Development Process</b></h2>
 
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The development of PhURL incorporated a blend of Agile, Scrum, and Waterfall methodologies, strategically chosen to ensure flexibility, 
 											collaboration, and systematic progression throughout the project. Agile principles facilitated adaptability and stakeholder involvement, while Scrum's iterative 
