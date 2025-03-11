@@ -904,17 +904,22 @@
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Problem Statement</strong></p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Phishing attacks are evolving rapidly, making it challenging for individuals and organizations to stay protected. Existing solutions often lack adaptability and fail to educate users effectively. PhURL aims to address these gaps by combining advanced machine learning (ML) techniques with user education to provide a comprehensive phishing detection and prevention platform.</p>
 
+										<br>
+
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Objectives</strong></p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. Develop a machine learning model capable of accurately detecting phishing URLs.</p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. Create an intuitive and user-friendly interface for seamless interaction.</p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. Educate users about phishing threats and prevention strategies.</p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">4. Ensure the platform is scalable, adaptable, and secure.</p>
 
+										<br>
 
 										<blockquote class="wp-block-quote" style= color:white;>
 											<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">If It Looks Phishy, It Probably Is</p>
 											<!-- <cite>Report Phishing & Block The Sender</cite> -->
 										</blockquote>
+
+										<br>
 
 										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Design Process</b></h2>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>1. User Research and Requirements Analysis</strong></p>
@@ -924,12 +929,12 @@
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- The platform had to be responsive and compatible across multiple devices and browsers.</p>
 
 										<br>
-										
+
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>2. Wireframing and Prototyping</strong></p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Using Figma, the team created wireframes and prototypes for the user interface (UI). The design prioritized:</p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Simplicity:</strong> A clean, minimalistic layout to avoid overwhelming users.</p>
 										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Accessibility:</strong> Clear navigation and readable typography.</p>
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Engagement:</strong> Interactive elements to encourage user interaction with the platform..</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Engagement:</strong> Interactive elements to encourage user interaction with the platform.</p>
 
 										<br>
 
@@ -941,38 +946,111 @@
 
 										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Development Process</b></h2>
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The development of PhURL incorporated a blend of Agile, Scrum, and Waterfall methodologies, strategically chosen to ensure flexibility, 
-											collaboration, and systematic progression throughout the project. Agile principles facilitated adaptability and stakeholder involvement, while Scrum's iterative 
-											approach allowed for continuous improvements through short sprints. Waterfall methodology provided structure during planning, ensuring clear requirements and 
-											project alignment. A flow chart guided the sequential implementation of the project, ensuring systematic development. This systematic approach enabled dataset 
-											selection, preprocessing, model development, frontend and backend development, rigorous testing, and deployment in a logical sequence. By following this 
-											structured framework, the development team ensured effective coordination, minimized oversights, tracked progress, and maintained project timelines, 
-											resulting in the successful creation of PhURL, a high-quality platform for phishing attack detection and prevention.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>1. Methodology</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The development team adopted a hybrid approach, combining Agile, Scrum, and Waterfall methodologies:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Agile</strong> facilitated adaptability and continuous stakeholder feedback.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Scrum</strong> enabled iterative development through short sprints.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Waterfall</strong> provided structure during the planning and requirements-gathering phases.</p>
 
+										<br>
 
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>2. Dataset Selection and Preprocessing</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">A dataset from Kaggle (submitted by Manu Siddhartha) was chosen for its comprehensive coverage of URL categories, including phishing, malware, defacement, and safe URLs. The dataset underwent rigorous preprocessing, including:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Feature engineering</strong> to extract relevant attributes.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Scaling</strong> to normalize data and improve model performance.</p>
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">In the development of PhURL, several crucial steps were undertaken, starting with dataset selection. Among the available options, 
-											a dataset from Kaggle submitted by <strong>Manu Siddhartha</strong> was chosen for its extensive coverage of various URL categories, including phishing, defacement, malware, 
-											and safe URLs, totaling 651,191 entries. This dataset provided a comprehensive foundation for training and evaluating machine learning models. Following 
-											dataset selection, rigorous preprocessing was conducted, involving feature engineering and scaling to enhance the dataset's quality and suitability for 
-											model development. This phase ensured the extraction of relevant features and addressed issues such as missing data and outliers.
-										The subsequent phase focused on model development, with three prominent machine learning models selected for testing: Light GBM Classifier, Random Forest 
-										Classifier, and XGBoost Classifier. Among these, the Light GBM Classifier demonstrated exceptional performance, with a high accuracy rate of 96.6%, low false 
-										positives, and false negatives. Therefore, it was chosen as the optimal model for PhURL. The trained Light GBM model was then serialized into a joblib file 
-										for efficient integration and deployment within the system. This approach ensures the utilization of a robust and accurate machine learning model while 
-										facilitating seamless integration and deployment.</p>
+										<br>
 
-										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Frontend Development Phase</b></h2>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>3. Machine Learning Model Development</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Three ML models were tested:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Light GBM Classifier</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Random Forest Classifier</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>XGBoost Classifier</strong></p>
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">During this phase, the focus shifted towards designing and developing the frontend of the PHURL system. It began with a thorough 
-											analysis of user requirements to understand their needs comprehensively. Leveraging insights from the backend analysis, the user interface (UI) of PHURL was 
-											meticulously crafted using Figma. The UI design prioritized delivering an exceptional user experience while ensuring user-friendliness. Every aspect was 
-											carefully considered to engage users effortlessly. The goal was to create a visually appealing, intuitive, and accessible interface.
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The Light GBM Classifier emerged as the best-performing model, achieving an accuracy rate of 96.6% with low false positives and negatives. The trained model was serialized into a joblib file for integration into the backend.</p>
 
-											Once the design phase concluded, the UI was implemented using React and Javascript. This dynamic combination brought the design to life and enabled seamless 
-											interactivity. By leveraging these technologies, frontend development translated conceptual designs into a functional and responsive user interface.</p>
+										<br>
 
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>4. Frontend Development</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The frontend was built using React and JavaScript, ensuring a dynamic and responsive user experience. Key features included:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- A real-time URL verification tool.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Interactive educational resources.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- A user-friendly dashboard for seamless navigation.</p>
 
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>5. Backend Development</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The backend was developed using the Django framework, chosen for its scalability, security, and compatibility with machine learning. Key components included:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Integration of the Light GBM Classifier for phishing detection.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Implementation of the Model-View-Controller (MVC) architecture for efficient code management.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Configuration of API endpoints to handle URL verification requests.</p>
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>6. Testing and Iteration</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The platform underwent extensive testing, including:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>User Acceptance Testing (UAT):</strong> Conducted with university students to evaluate usability and gather feedback.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Cross-Browser Testing:</strong> Ensured compatibility with browsers like Google Chrome, Brave, Mozilla Firefox, and Opera Mini.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- <strong>Iterative Refinement:</strong> Addressed issues such as the lack of on-screen warnings for incorrect inputs.</p>
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>7. Deployment</strong></p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Heroku was chosen as the deployment platform due to its scalability and ease of use. The deployment process included:</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Configuring the backend to handle API requests.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Ensuring seamless functionality across all tested browsers.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Conducting final checks to confirm the platform’s robustness and reliability.</p>
+
+										<br>
+
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Key Features of PhURL</b></h2>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>1. Phishing URL Detection:</strong></p>
+										
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Utilizes a highly accurate Light GBM Classifier to identify malicious URLs.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Provides real-time verification results to users.</p>
+										
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>2. Educational Resources:</strong></p>
+										
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Offers comprehensive learning materials, including articles, infographics, and videos.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Empowers users to recognize and avoid phishing attacks.</p>
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>3. User-Friendly Interface:</strong></p>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Features a clean, intuitive design for easy navigation.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Ensures accessibility for users of all technical levels.</p>
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>4. Scalability and Adaptability:</strong></p>
+										
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Built on Django and React for future scalability.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">- Designed to adapt to evolving phishing tactics.</p>
+
+										<br>
+
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Challenges and Learnings</b></h2>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Challenges:</strong></p>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. <strong>Dataset Limitations:</strong>  The initial dataset required extensive preprocessing to address missing data and outliers.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. <strong>Model Accuracy:</strong> Achieving high accuracy while minimizing false positives and negatives was a significant challenge.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. <strong>User Feedback:</strong> Incorporating user feedback during testing revealed areas for improvement, such as the need for on-screen warnings.</p>
+
+										<br>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><strong>Learnings:</strong></p>
+
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. <strong>Hybrid Methodologies:</strong>  Combining Agile, Scrum, and Waterfall methodologies proved effective in balancing flexibility and structure.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. <strong>User-Centric Design:</strong> Continuous user feedback was crucial in refining the platform’s usability.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. <strong>Adaptability:</strong> The platform’s ability to adapt to new phishing tactics is essential for long-term success.</p>
+
+										<br>
 
 										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>UI Design Guide</b></h2>
                                     </div> <br>
@@ -989,42 +1067,29 @@
 
 									<div class="entry-content">
 
-										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Development, Testing, and Deployment</b></h2>
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Results and Impact</b></h2>
+										
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. <strong>High Accuracy:</strong> The Light GBM Classifier achieved an accuracy rate of 96.6%, ensuring reliable phishing detection.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. <strong>User Engagement:</strong> The platform’s intuitive design and educational resources received positive feedback from users.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. <strong>Scalability:</strong> PhURL’s architecture allows for future enhancements and integration of additional features.</p>
+										
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">The backend development of PhURL began with the adoption of Django framework, chosen for its compatibility and suitability for a 
-											web-based phishing detection platform utilizing machine learning techniques. Django's robust features, extensive documentation, scalability, and built-in 
-											security measures provided a solid foundation for the project. The Model-ViewController (MVC) architectural pattern facilitated organization and management 
-											of the codebase. The trained Light GBM classifier for phishing URL detection was seamlessly integrated into the backend, leveraging Django's capabilities to 
-											handle API requests through properly configured URL patterns.</p>
+										<br>
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Extensive testing, including user acceptance testing with university students, was conducted to ensure the website's usability 
-											and user-friendliness. Feedback from users guided iterative refinement, addressing areas for enhancement. Notably, the absence of on-screen user warnings for 
-											incorrect inputs was acknowledged for future implementation. Thorough testing across popular web browsers such as Google Chrome, Brave, Mozilla Firefox, and 
-											Opera Mini ensured optimal performance and compatibility.</p>
+										<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Future Improvements</b></h2>
+										
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">1. <strong>On-Screen Warnings:</strong> The Light GBM Classifier achieved an accuracy rate of 96.6%, ensuring reliable phishing detection.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">2. <strong>Enhanced Detection:</strong> PhURL’s architecture allows for future enhancements and integration of additional features.</p>
+										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">3. <strong>Mobile App Development:</strong> Expand the platform’s reach by developing a mobile application.</p>
+										
 
-										<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">Heroku was chosen as the preferred platform for deploying PhURL due to its scalability, ease of deployment, and support for various 
-											programming languages and frameworks. The web application demonstrated seamless functionality across tested browsers, without encountering errors or issues, 
-											attesting to its robustness and reliability. By leveraging Heroku's capabilities and conducting meticulous browser testing, PhURL achieved successful deployment 
-											on the web, promising a seamless user experience without compromising security or functionality.</p>
+										<br>
 
 											<h2 style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;"><b>Discussion & Conclusion</b></h2>
 
 											<p style="font-family: Manrope; font-family: Manrope; color: #c5c5c5;">
 
-												PhURL, a web-based platform utilizing AI and machine learning for phishing URL detection and prevention, has been successfully deployed and is fully operational. 
-												The platform has effectively achieved its project objectives, offering users a comprehensive learning section alongside its detection capabilities.
-												
-												One of PhURL's primary features is its ability to verify the authenticity of suspicious links, empowering users to make informed decisions and avoid falling 
-												victim to phishing schemes. Additionally, PhURL's commitment to inclusivity ensures users of all knowledge levels can benefit from its services.
-												
-												While currently functional, PhURL acknowledges areas for improvement, such as implementing user warnings for incorrect inputs and addressing complications with 
-												misclassifying certain phishing URLs. Continuous refinement is essential to ensure PhURL remains a reliable tool for detection and prevention.
-												
-												The implementation of PhURL as a university project is commendable for its direct relevance to cybersecurity challenges. By focusing on phishing detection and 
-												prevention, the project addresses a critical issue affecting both individuals and organizations.
-												
-												PhURL's emphasis on user education aligns with the fundamental principles of disseminating knowledge and empowering individuals. By providing comprehensive 
-												information on phishing attacks, PhURL equips users with the necessary tools to safeguard themselves and their sensitive information.
+												PhURL successfully addresses the growing threat of phishing attacks by combining advanced machine learning techniques with user education. The platform’s intuitive design, high accuracy, and scalability make it a valuable tool for individuals and organizations alike. By continuously refining its features and adapting to new threats, PhURL has the potential to make a significant impact in the fight against cybercrime.
 												
 												</p>
 
